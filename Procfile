@@ -1,1 +1,1 @@
-worker: python3 autoReplier.py
+worker: python autoReplier.py
