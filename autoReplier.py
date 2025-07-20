@@ -28,6 +28,8 @@ async def handler(event):
     if event.is_group or event.is_channel:
         return
 
+    print(f"💬 Получено сообщение от: {event.sender_id}")
+
     user_id = event.sender_id
     now = datetime.now()
     last_time = last_reply_times.get(user_id)
